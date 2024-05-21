@@ -1,0 +1,59 @@
+.dropdown {
+  width: max-content;
+  position: relative;
+
+  >button {
+    width: 100%;
+    cursor: pointer;
+    padding: .4rem .8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    background: none;
+    outline: 2px solid teal;
+    margin-bottom: 5px;
+
+    &:hover {
+      outline: 3px solid tomato;
+    }
+  }
+
+  ul {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    min-width: 100%;
+    width: max-content;
+
+    list-style-type: none;
+    font-family: sans-serif;
+    padding-left: 0;
+    margin: 0;
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: red;
+      font-size: 1rem;
+      border-radius: 3px;
+      padding: .5rem .3rem;
+
+      &:hover {
+        background: pink;
+        cursor: pointer;
+      }
+
+      &:visited {
+        color: red;
+      }
+    }
+  }
+}
+
+ul.visible {
+  display: block;
+}
